@@ -20,7 +20,7 @@ jobs:
         - name: Restore dependencies
           run: |
             dotnet restore S.O.F.I.S/S.O.F.I.S.csproj
-            dotnet restore S.O.F.I.S/Tests/S.O.F.I.S.Tests.csproj
+            dotnet restore Tests/S.O.F.I.S.Tests.csproj
 
         - name: Build solution
           run: dotnet test Tests/S.O.F.I.S.Tests.csproj --no-build --verbosity normal
