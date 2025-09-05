@@ -23,7 +23,7 @@ jobs:
             dotnet restore S.O.F.I.S.Tests/S.O.F.I.S.Tests.csproj
 
         - name: Build solution
-          run: dotnet test S.O.F.I.S.Tests/S.O.F.I.S.Tests.csproj --no-build --verbosity normal
+          run: dotnet test Tests/S.O.F.I.S.Tests.csproj --no-build --verbosity normal
 
     docker-test:
         runs-on: ubuntu-latest
